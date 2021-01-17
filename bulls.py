@@ -9,7 +9,7 @@ def main():
 I've generated a random 4 digit number for you.
 Let's play a bulls and cows game.\n''')
         while True:  # smyčka generující i 4digit čísla začínající 0
-            number = random.randrange(0, 9876)
+            number = random.randrange(0, 9877)
             if len(str(number)) < 3:
                 continue
             if len(str(number)) == 3:
