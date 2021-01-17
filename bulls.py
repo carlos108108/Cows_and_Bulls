@@ -16,7 +16,6 @@ Let's play a bulls and cows game.\n''')
                 number = str('0') + str(number)
             x = set(str(number))
             if len(x) == 4:
-                print(number)
                 break
 
         start = time.time()
