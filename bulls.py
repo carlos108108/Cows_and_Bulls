@@ -74,7 +74,7 @@ def my_statistic(game_counter, total_time, all_counter):
         print(f'thank you for your {game_counter} games')
     print(f'all games took {round(total_time, 2)} seconds')
     print(f'each game took {round(total_time / game_counter, 2)} seconds on average')
-    print(f'you needed {round(all_counter / game_counter, 2)} attemps on average for each game')
+    print(f'you needed {round(all_counter / game_counter, 2)} attempts on average for each game')
 
 main()
 print()
