@@ -25,7 +25,7 @@ Let's play a bulls and cows game.\n''')
             counter += 1
         end = time.time()
         if counter == 1:
-            print(f'1 attemp? congrats, you\'ve hacked my game :) ')
+            print(f'1 attempt? congrats, you\'ve hacked my game :) ')
         elif counter < 6:
             print(f'amazing!!! {counter} attempts')
         elif counter < 12:
