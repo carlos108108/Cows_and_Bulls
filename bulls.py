@@ -10,8 +10,7 @@ I've generated a random 4 digit number for you.
 Let's play a bulls and cows game.\n''')
         while True:  # smyčka NEgenerující 4digit čísla začínající 0
             number = random.randrange(1234, 9877)
-            y = set(str(number))
-            if len(y) == 4:
+            if len(set(str(number))) == 4:
                 break
 
         start = time.time()
