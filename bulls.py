@@ -12,7 +12,6 @@ Let's play a bulls and cows game.\n''')
             number = random.randrange(1234, 9877)
             y = set(str(number))
             if len(y) == 4:
-                print(number)
                 break
 
         start = time.time()
