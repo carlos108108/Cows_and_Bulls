@@ -8,12 +8,11 @@ def main():
         print('''Hi there!
 I've generated a random 4 digit number for you.
 Let's play a bulls and cows game.\n''')
-        while True:  # smyčka generující i 4digit čísla začínající 0
-            number = random.randrange(123, 9877)
-            if len(str(number)) == 3:
-                number = str('0') + str(number)
-            x = set(str(number))
-            if len(x) == 4:
+        while True:  # smyčka NEgenerující 4digit čísla začínající 0
+            number = random.randrange(1234, 9877)
+            y = set(str(number))
+            if len(y) == 4:
+                print(number)
                 break
 
         start = time.time()
@@ -43,9 +42,9 @@ Let's play a bulls and cows game.\n''')
     my_statistic(game_counter, total_time, all_counter)
 
 def get_num():
-    while True:
+    while True: #když opakující se cifra-výzva k novému zadání
         num = input(f'Enter a 4-digits number: ')
-        if len(str(num)) == 4 and num.isnumeric():
+        if len(set(str(num))) == 4 and num.isnumeric():
             return num
 
 def match(num, number):
